@@ -15,7 +15,7 @@
 	@$re_password = $_POST["pass2"];
 	
 	session_start();
-	
+
 	if(!isset($_SESSION['num_auth']))
 		html_error_quit("请等待识别的图片显示完毕!");
 	if(strcasecmp($_SESSION['num_auth'],$num_auth))
